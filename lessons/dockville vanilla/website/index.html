@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <title>Easy Parking</title>
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/css/queries.css">
@@ -12,7 +14,10 @@
     <header>
       <section class="nav_section">
         <nav id="nav" class="nav">
-          <div id="logo">Easy Parking</div>
+          <div id="logo">
+            <span><i class="fa fa-car" aria-hidden="true"></i></span>
+            <span>Easy Parking</span>
+          </div>
           <div class="nav_list-container">
             <ul class="nav_list">
               <li class="nav_links">
@@ -72,7 +77,9 @@
             <article class="service_card">
               <div class="service_card-container">
               <div class="service_heading-container">
-                <div class="service_icon">Icon</div>
+                <div class="service_icon">
+                  <i class="fa fa-car" aria-hidden="true"></i>
+                </div>
                 <h3 class="service_card-heading">Parking Management</h3>
               </div>
               <p>secure parking for trucks, cars, taxis coasters and boda-bodas with 24/7 monitoring.</p>
@@ -86,28 +93,32 @@
             <article class="service_card">
               <div class="service_card-container">
               <div class="service_heading-container">
-                <div class="service_icon">Icon</div>
+                <div class="service_icon">
+                  <i class="fa fa-car-battery"></i>
+                </div>
                 <h3 class="service_card-heading">Parking Management</h3>
               </div>
-              <p>secure parking for trucks, cars, taxis coasters and boda-bodas with 24/7 monitoring.</p>
+              <p>Proffesional tire services including pressure checks, puncture repairs and valve replacements.</p>
               <ul class="service_list">
-                <li>CCTV surveillance</li>
-                <li>Security Guards</li>
-                <li>Covered Parking</li>
+                <li>Tire Pressure check</li>
+                <li>Puncture fixing</li>
+                <li>Valve replacement</li>
               </ul>
               </div>
             </article>
             <article class="service_card">
               <div class="service_card-container">
               <div class="service_heading-container">
-                <div class="service_icon">Icon</div>
-                <h3 class="service_card-heading">Parking Management</h3>
+                <div class="service_icon">
+                  <i class="fa fa-battery-full" aria-hidden="true"></i>
+                </div>
+                <h3 class="service_card-heading">Battery Rentals</h3>
               </div>
-              <p>secure parking for trucks, cars, taxis coasters and boda-bodas with 24/7 monitoring.</p>
+              <p>Quality battery rentals in various sizes for emergency power needs and vehicle starting.</p>
               <ul class="service_list">
-                <li>CCTV surveillance</li>
-                <li>Security Guards</li>
-                <li>Covered Parking</li>
+                <li>Small Batteries</li>
+                <li>Medium</li>
+                <li>Large Batteries</li>
               </ul>
               </div>
             </article>
@@ -174,13 +185,13 @@
         </div>
       </section>
     </main>
-    <footer class="footer section">
+    <footer class="footer">
       <div class="footer_container">
         <div class="footer_upper">
           <article class="footer_card">
             <h3 class="footer_card-heading">
               <span>
-                <img src="/icons/outline/car.svg" alt="" class="icon">
+                <i class="fa fa-car" aria-hidden="true"></i>
               </span>
               <span>Easy Parking</span>
             </h3>
@@ -189,17 +200,17 @@
               <ul class="footer_social-links">
                 <li>
                   <a href="#">
-                    <img src="/icons/outline/brand-facebook.svg" alt="">
+                    <i class="fa-brands fa-facebook"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="/icons/outline/brand-twitter.svg" alt="">
+                    <i class="fa-brands fa-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="/icons/outline/brand-instagram.svg" alt="">
+                    <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
               </ul>
@@ -208,34 +219,42 @@
           <article>
             <h3 class="footer_card-heading">Quick Links</h3>
             <div class="footer_card-content">
-              <p>
-                <a href="#">Home</a>
+              <p class="footer_card-contact">
+                <span><i class="fa fa-home"></i></span>
+                <span><a href="#">Home</a></span>
               </p>
-              <p>
-                <a href="#">Services</a>
+              <p class="footer_card-contact">
+                <span><i class="fa fa-cogs"></i></span>
+                <span><a href="#"> Services</a></span>
               </p>
-              <p>
-                <a href="#">About Us</a>
+              <p class="footer_card-contact">
+                <span><i class="fa fa-info-circle"></i></span>
+                <span><a href="#">About Us</a></span>
               </p>
-              <p>
-                <a href="#">Pricing</a>
+              <p class="footer_card-contact">
+                <span><i class="fa fa-tag"></i></span>
+                <span><a href="#">Pricing</a></span>
               </p>
             </div>
           </article>
           <article>
             <h3 class="footer_card-heading">Services</h3>
             <div class="footer_card-content">
-              <p>
-                <a href="#">Parking Management</a>
+              <p class="footer_card-contact">
+                <span><i class="fa fa-parking"></i></span>
+                <span><a href="#">Parking Management</a></span>
               </p>
-              <p>
-                <a href="#">Tire Clinic</a>
+              <p class="footer_card-contact">
+                <span><i class="fa fa-car-battery"></i></span>
+                <span><a href="#">Tire Clinic</a></span>
               </p>
-              <p>
-                <a href="#">Battery Rental</a>
+              <p class="footer_card-contact">
+                <span><i class="fa fa-bolt"></i></span>
+                <span><a href="#">Battery Rental</a></span>
               </p>
-              <p>
-                24/7 security
+              <p class="footer_card-contact">
+                <span><i class="fa fa-shield-alt"></i></span>
+                <span>24/7 security</span>
               </p>
             </div>
           </article>
@@ -243,23 +262,17 @@
             <h3 class="footer_card-heading">Contact Info</h3>
             <div class="footer_card-content">
               <p class="footer_card-contact">
-                <span>
-                  <img src="/icons/outline/location-bolt.svg" alt="">
-                </span>
+                <span><i class="fa fa-location-dot"></i></span>
                 <span>Kinyiira Street, Wakiso Uganda</span>
               </p>
               <p class="footer_card-contact">
-                <span>
-                  <img src="/icons/outline/phone-call.svg" alt="">
-                </span>
+                <span><i class="fa fa-phone"></i></span>
                 <span>
                   +256789124398
                 </span>
               </p>
               <p class="footer_card-contact">
-                <span>
-                  <img src="/icons/outline/mail.svg" alt="">
-                </span>
+                <span><i class="fa fa-envelope"></i></span>
                 <span>
                   easyparking@gmail.com
                 </span>
@@ -268,7 +281,7 @@
           </article>
         </div>
         <div class="footer_lower">
-          <div class="footer_copy-container">copy right</div>
+          <div class="footer_copy-container">&copy; 2025 EasyParking Services. All rights reserved.</div>
           <div class="footer_lovalace">
             <a href="#">Powered by Lovelace labs.</a>
           </div>

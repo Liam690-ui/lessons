@@ -121,19 +121,31 @@ a {
 .section {
   padding: 12rem 9.6rem;
 }
-
+#logo i {
+  color: var(--black);
+}
+#logo span:nth-of-type(1) i {
+  color: var(--secondary);
+}
+#logo span:nth-of-type(2),
+#logo span:nth-of-type(2) a {
+  color: var(--blue);
+}
 
 /* Home page */
 
 /* Navbar */
 .nav_section {
-padding: 4.8rem 9.6rem;
+padding: 2.4rem 9.6rem;
 display: flex;
 justify-content: center;
-position: fixed;
-z-index: 10;
 background-color: var(--white);
-width: 100vw;
+box-shadow: var(--shadow-card);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+width: 100%;
 }
 
 .nav {
@@ -158,7 +170,6 @@ width: 100vw;
 .hero {
   background-color: var(--blue-dark);
   color: var(--white);
-  /* padding: 24rem 9.6rem 12rem 9.6rem; */
 }
 
 .hero_container {
@@ -307,6 +318,16 @@ width: 100vw;
   font-size: 1.6rem;
   line-height: 1.5;
 }
+.service_icon i {
+  color: var(--blue);
+  font-size: 2.8rem;
+}
+.service_card:nth-child(2) .service_icon i{
+  color: var(--secondary);
+}
+.service_card:nth-child(3) .service_icon i{
+  color: var(--green);
+}
 
 .service_list {
   display: flex;
@@ -423,6 +444,7 @@ width: 100vw;
   justify-content: center;
   background-color: var(--dark-grey);
   color: var(--smooth-white);
+  padding: 9.6rem 9.6rem 2.4rem 9.6rem;
 }
 .footer a {
   color: var(--smooth-white);
@@ -444,6 +466,9 @@ width: 100vw;
   font-weight: 600;
   line-height: 1.4;
 }
+.footer_card {
+  margin-right: 4.8rem;
+}
 .footer_card-content{
   display: flex;
   flex-direction: column;
@@ -455,6 +480,7 @@ width: 100vw;
 }
 .footer_social-links {
   display: flex;
+  gap: var(--space-m);
 }
 
 .footer_card-contact {
